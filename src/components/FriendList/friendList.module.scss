@@ -1,0 +1,28 @@
+.friends {
+  text-align: center;
+  width: 300px;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  margin-bottom: 5px;
+}
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+.avatar {
+  display: block;
+  width: 50px;
+}
+.name {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
