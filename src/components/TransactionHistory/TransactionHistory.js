@@ -1,17 +1,10 @@
 import React from 'react';
 import styles from './transactionHistory.module.scss';
-function transactionItemRender({ id, type, amount, currency }) {
-  return (
-    <tr key={id}>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
-    </tr>
-  );
-}
+import TransactionItem from './TransactionItem';
+
 const TransactionHistory = ({ transactions }) => {
   return (
-    <table class={styles.transactionHistory}>
+    <table className={styles.transactionHistory}>
       <thead>
         <tr>
           <th>Type</th>
@@ -20,7 +13,16 @@ const TransactionHistory = ({ transactions }) => {
         </tr>
       </thead>
 
-      <tbody>{transactions.map(transactionItemRender)}</tbody>
+      <tbody>
+        {transactions.map(transaction => (
+          <TransactionItem
+            key={transaction.id}
+            type={transaction.type}
+            amount={transaction.amount}
+            currency={transaction.currency}
+          />
+        ))}
+      </tbody>
     </table>
   );
 };
