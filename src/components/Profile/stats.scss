@@ -1,0 +1,19 @@
+.stats {
+  background-color: rgb(207, 202, 202);
+  display: flex;
+  justify-content: space-around;
+}
+.label {
+  margin-bottom: 6px;
+}
+.quantity {
+  font-weight: 600;
+}
+li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+}
