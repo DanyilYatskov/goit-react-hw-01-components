@@ -2,7 +2,6 @@ import React from "react";
 import Stats from "./Stats";
 import "./profile.scss";
 const Profile = ({ userInfo }) => {
-  console.log("avatar", userInfo.avatar);
   return (
     <div className="Profile">
       <div className="description">
