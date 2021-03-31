@@ -9,3 +9,6 @@ function TransactionItem({ type, amount, currency }) {
   );
 }
 export default TransactionItem;
+TransactionItem.defaultProps = {
+  amount: 0,
+};
