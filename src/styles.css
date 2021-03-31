@@ -12,6 +12,6 @@ code {
     monospace;
 }
 #root {
-  max-width: 300px;
+  max-width: max-content;
   margin: auto;
 }
