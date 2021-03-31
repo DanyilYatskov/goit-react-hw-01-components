@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Stats from './Stats';
 import styles from './profile.module.scss';
 const Profile = ({ userInfo }) => {
@@ -23,3 +24,22 @@ const Profile = ({ userInfo }) => {
   );
 };
 export default Profile;
+Profile.defaultProps = {
+  userInfo: {
+    avatar:
+      'https://www.edmundsgovtech.com/wp-content/uploads/2020/01/default-picture_0_0.png',
+  },
+};
+Profile.propTypes = {
+  userInfo: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string,
+    stats: PropTypes.shape({
+      followers: PropTypes.number,
+      views: PropTypes.number,
+      likes: PropTypes.number,
+    }).isRequired,
+  }),
+};
