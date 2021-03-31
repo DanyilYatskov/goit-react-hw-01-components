@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
 import styles from './stats.module.scss';
 const Stats = ({ followers, views, likes }) => {
   return (
@@ -24,9 +24,4 @@ Stats.defaultProps = {
   followers: 0,
   views: 0,
   likes: 0,
-};
-Stats.propTypes = {
-  followers: PropTypes.number,
-  views: PropTypes.number,
-  likes: PropTypes.number,
 };
