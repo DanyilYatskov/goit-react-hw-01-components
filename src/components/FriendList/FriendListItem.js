@@ -1,6 +1,6 @@
 import React from 'react';
-
 import styles from './friendList.module.scss';
+
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <li className={styles.item}>

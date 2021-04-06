@@ -27,7 +27,9 @@ const TransactionHistory = ({ transactions }) => {
     </table>
   );
 };
+
 export default TransactionHistory;
+
 TransactionHistory.propTypes = {
   transactions: PropTypes.arrayOf(
     PropTypes.shape({

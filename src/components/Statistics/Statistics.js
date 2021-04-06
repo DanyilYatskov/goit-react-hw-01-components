@@ -19,7 +19,9 @@ const Statistics = ({ statsData }) => {
     </section>
   );
 };
+
 export default Statistics;
+
 Statistics.propTypes = {
   statsData: arrayOf(
     PropTypes.shape({

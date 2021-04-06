@@ -1,6 +1,6 @@
 import React from 'react';
-
 import styles from './stats.module.scss';
+
 const Stats = ({ followers, views, likes }) => {
   return (
     <ul className={styles.stats}>
@@ -19,7 +19,9 @@ const Stats = ({ followers, views, likes }) => {
     </ul>
   );
 };
+
 export default Stats;
+
 Stats.defaultProps = {
   followers: 0,
   views: 0,

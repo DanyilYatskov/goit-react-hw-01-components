@@ -1,4 +1,5 @@
 import React from 'react';
+
 function TransactionItem({ type, amount, currency }) {
   return (
     <tr>
@@ -9,6 +10,7 @@ function TransactionItem({ type, amount, currency }) {
   );
 }
 export default TransactionItem;
+
 TransactionItem.defaultProps = {
   amount: 0,
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Stats from './Stats';
 import styles from './profile.module.scss';
+
 const Profile = ({ userInfo }) => {
   return (
     <div className={styles.profile}>
@@ -23,13 +24,16 @@ const Profile = ({ userInfo }) => {
     </div>
   );
 };
+
 export default Profile;
+
 Profile.defaultProps = {
   userInfo: {
     avatar:
       'https://www.edmundsgovtech.com/wp-content/uploads/2020/01/default-picture_0_0.png',
   },
 };
+
 Profile.propTypes = {
   userInfo: PropTypes.shape({
     name: PropTypes.string.isRequired,
